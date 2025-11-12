@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EUNOIA Kids - Terapia Infanto Juvenil</title>
+  <link rel="stylesheet" href="/estilos/kids.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <header>
+    <div class="logo">
+      <img src="img\kids.png" alt="Logo Eunoia" />
+      <div>
+        <h1>EUNOIA</h1>
+        <p>Psicología Integral</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html" class="active">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="kids.html">Terapia Infantil</a>
+      <a href="https://wa.me/593999938632" target="_blank" class="whatsapp-btn">WhatsApp</a>
+    </nav>
+  </header>
+
+  <section class="servicios">
+    <div class="tarjeta">
+      <h3>🗣️ Mejor comunicación familiar</h3>
+      <p>Fortalecemos el vínculo entre padres e hijos mediante el entendimiento mutuo.</p>
+    </div>
+    <div class="tarjeta">
+      <h3>💛 Superación de traumas</h3>
+      <p>Diagnostico de intervencion</p>
+    </div>
+    <div class="tarjeta">
+      <h3>🌱 Desarrollo emocional y social</h3>
+      <p>Fomentamos la autoestima, empatía y habilidades sociales en niños y jóvenes.</p>
+    </div>
+  </section>
+
+  <section class="carrusel">
+    <div class="slides">
+      <img src="/img/Kid1.jpeg" alt="Niños en terapia">
+      <img src="/img/Kid2.png" alt="Juego terapéutico">
+      <img src="/img/Kid3.png" alt="Psicóloga infantil">
+      <img src="/img/Kid4.png" alt="Dinámica grupal">
+      <img src="/img/Kid5.png" alt="Niños felices">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Eunoia Kids - Todos los derechos reservados</p>
+  </footer>
+
+  <div class="social-bar">
+    <a href="https://wa.me/593999938632" target="_blank" class="icon whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/eunoiapsic.gye" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@eunoia.psicologa.i" target="_blank" class="icon tiktok"><i class="fab fa-tiktok"></i></a>
+    <a href="mailto:eunoiapsic.gye@gmail.com" class="icon email"><i class="fas fa-envelope"></i></a>
+  </div>
+
+  <script>
+    // Carrusel automático
+    let index = 0;
+    const slides = document.querySelectorAll('.slides img');
+    setInterval(() => {
+      slides.forEach((img, i) => img.style.display = i === index ? 'block' : 'none');
+      index = (index + 1) % slides.length;
+    }, 3000);
+  </script>
+</body>
+</html>
