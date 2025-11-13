@@ -1,3 +1,166 @@
+/* 🔹 Tablets (pantallas medianas: 992px hacia abajo) */
+@media (max-width: 992px) {
+
+  header {
+    flex-wrap: wrap;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .logo {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-video video {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .carrusel {
+    width: 90%;
+    height: 320px;
+  }
+
+  .about {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* 🔹 Celulares (pantallas pequeñas: 768px hacia abajo) */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  nav a {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .hero-text .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .hero-video video {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+  }
+
+  .carrusel {
+    width: 95%;
+    height: 250px;
+  }
+
+  .slides img {
+    object-fit: cover;
+  }
+
+  .about {
+    padding: 1rem;
+    width: 95%;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+
+  /* 🔸 Ajuste de barra flotante para móviles */
+  .social-bar {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+/* 🔹 Pantallas muy pequeñas (480px o menos) */
+@media (max-width: 480px) {
+
+  .hero-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .hero-text p {
+    font-size: 0.85rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .carrusel {
+    height: 220px;
+  }
+
+  .logo img {
+    width: 45px;
+  }
+
+  footer p {
+    font-size: 0.75rem;
+  }
+}
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 /* Estilo general */
 body {
@@ -335,3 +498,8 @@ footer .social a:hover {
   height: 75%;
 }
 
+/* --- Barra flotante de redes --- */
+/* --- git status --- */
+/* --- git add . --- */
+/* --- git commit -m "Eunoia" --- */
+/* --- $ git push --- */
